@@ -6,13 +6,25 @@ void main () => runApp(MaterialApp(
     appBar: AppBar(
       title: Text('Title here'),
       centerTitle: true,
+      backgroundColor: Colors.red[600],
     ),
 //    body: Text('Title here using Scaffold, appBar, AppBar, Title')
     body: Center(
-      child: Text('Title here using Scaffold, appBar, AppBar,centretitle true, Title,text,body,Centre,floating action button'),
+      child: Text(
+          'Title here using Scaffold, appBar, AppBar,centretitle true, Title, text,body,Centre,floating action button',
+        style: TextStyle(
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2.0,
+          color: Colors.lightBlueAccent[200],
+          fontFamily: 'IndieFlower',
+        ),
+      ),
     ),
     floatingActionButton: FloatingActionButton(
-      child: Text('click scafoold')
+      onPressed: (){},
+      child: Text('click'),
+      backgroundColor: Colors.red[700],
     ),
   ),
 ));
