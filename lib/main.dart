@@ -1,33 +1,45 @@
+// Follows youtube playlist "Flutter Tutorial for Beginners" by The Net Ninja
 import 'package:flutter/material.dart';
 
 void main () => runApp(MaterialApp(
 //  home: Text('Texting it out'),
-  home: Scaffold(
-    appBar: AppBar(
-      title: Text('Title here'),
-      centerTitle: true,
-      backgroundColor: Colors.red[600],
-    ),
+  home: Home(),
+));
+
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Title here'),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ),
 //    body: Text('Title here using Scaffold, appBar, AppBar, Title')
-    body: Center(
-      child: Text(
-          'Title here using Scaffold, appBar, AppBar,centretitle true, Title, text,body,Centre,floating action button',
-        style: TextStyle(
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold,
-          letterSpacing: 2.0,
-          color: Colors.lightBlueAccent[200],
-          fontFamily: 'IndieFlower',
+      body: Center(
+        child: Text(
+          'Title here using Scaffold, appBar, AppBar,centretitle true, Title, text,body,Centre,floating action button'
+              'Scaffold function was then pasted in a stateless widget named home its a class basically',
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2.0,
+            color: Colors.lightBlueAccent[200],
+        //    backgroundColor: Colors.black,
+            fontFamily: 'IndieFlower',
+          ),
         ),
       ),
-    ),
-    floatingActionButton: FloatingActionButton(
-      onPressed: (){},
-      child: Text('click'),
-      backgroundColor: Colors.red[700],
-    ),
-  ),
-));
+      backgroundColor: Colors.black38,
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Text('Save'),
+        backgroundColor: Colors.red[700],
+      ),
+    );
+  }
+}
 
 /*
 void main() {
