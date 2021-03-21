@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: Colors.blue[900],
+      backgroundColor: Colors.green[900],
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('Save'),
