@@ -1,11 +1,10 @@
 // Follows youtube playlist "Flutter Tutorial for Beginners" by The Net Ninja
 import 'package:flutter/material.dart';
 
-void main () => runApp(MaterialApp(
+void main() => runApp(MaterialApp(
 //  home: Text('Texting it out'),
-  home: Home(),
-));
-
+      home: Home(),
+    ));
 
 class Home extends StatelessWidget {
   @override
@@ -20,20 +19,20 @@ class Home extends StatelessWidget {
       body: Center(
         child: Text(
           'Title here using Scaffold, appBar, AppBar,centretitle true, Title, text,body,Centre,floating action button'
-              'Scaffold function was then pasted in a stateless widget named home its a class basically',
+          'Scaffold function was then pasted in a stateless widget named home its a class basically',
           style: TextStyle(
             fontSize: 20.0,
             fontWeight: FontWeight.bold,
             letterSpacing: 2.0,
             color: Colors.lightBlueAccent[200],
-        //    backgroundColor: Colors.black,
+            //    backgroundColor: Colors.black,
             fontFamily: 'IndieFlower',
           ),
         ),
       ),
-      backgroundColor: Colors.black38,
+      backgroundColor: Colors.blue[900],
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: () {},
         child: Text('Save'),
         backgroundColor: Colors.red[700],
       ),
