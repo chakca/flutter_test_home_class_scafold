@@ -11,13 +11,50 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Title here'),
+        title: Text('Scaffold( AppBar:( title: Text( here)))'),
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
 //    body: Text('Title here using Scaffold, appBar, AppBar, Title')
       body: Center(
-        child: Text(
+        child: IconButton(
+          onPressed: (){
+            print('Dont Touch Me');
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.lightGreenAccent,
+          iconSize: 53,
+        ),
+        /*child: RaisedButton.icon(
+            onPressed: () {
+              print('Icon pressed');
+        },
+            icon: Icon(
+              Icons.mail
+            ),
+            label: Text('send email'),
+          color: Colors.lightGreenAccent,
+        ),*/
+        /*child: RaisedButton(   //this can be replaced with FlatButton its same except the shadow disappears
+          onPressed: (){
+            print('Damn you don\'t click me');
+          },
+          child: Text('Clickme'),
+          color:Colors.lightGreenAccent,
+          elevation: 30,
+        )*/
+        /*child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.lightGreenAccent,
+          size: 53,
+        ),*/
+        //child: Image.asset('assets/space2.jpg'),
+        /*child: Image(
+          image: AssetImage('assets/space1.jpg'),
+        )*/
+        /*child: Image(image: NetworkImage('https://p0.piqsels.com/preview/310/545/298/cold-daylight-desktop-wallpaper-glacier.jpg')),
+        */
+        /*child: Text(
           'Title here using Scaffold, appBar, AppBar,centretitle true, Title, text,body,Centre,floating action button'
           'Scaffold function was then pasted in a stateless widget named home its a class basically',
           style: TextStyle(
@@ -28,9 +65,9 @@ class Home extends StatelessWidget {
             //    backgroundColor: Colors.black,
             fontFamily: 'IndieFlower',
           ),
-        ),
+        ),*/
       ),
-      backgroundColor: Colors.green[900],
+      backgroundColor: Colors.blue,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('Save'),
